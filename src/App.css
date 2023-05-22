@@ -1,0 +1,20 @@
+/* nav */
+.navbar {
+    margin: 2rem 170px;
+}
+.navbar-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.navbar-container p {
+    color: var(--White);
+    font-family: var(--font-family--primary);
+    font-size: 32px;
+    line-height: 32px;
+}
+.social-media {
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+}
