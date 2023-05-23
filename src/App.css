@@ -112,4 +112,62 @@ margin-top: 2rem;
     color: var(--Gray);
 }
 
+/* project section */
+
+.projects {
+    margin: 10px 170px;
+}
+.projects h1 {
+    color: var(--White);
+    font-family: var(--font-family--primary);
+    font-size: var(--font-size-headingXL);
+}
+.projects-container {
+    margin-top: 80px;
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    align-items: center;
+    font-family: var(--font-family--primary);
+}
+
+.content h2 {
+    margin-top: 20px;
+    color: var(--White);
+    font-size: var(--font-size-headingM);
+}
+.content p {
+    margin-top: 10px;
+    color: var(--Gray);
+    font-size: 1rem;
+}
+.project-image {
+    width: 100%;
+    position: relative;
+}
+.project-image img {
+    display: block;
+}
+.project-links {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgb(0,0,0,0.6);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    transition: opacity 0.25s;
+}
+.project-links a {
+    color: var(--Gray);
+    text-decoration: underline;
+    text-decoration-color: var(--Green);
+}
+.project-links:hover{
+    opacity: 1;
+}
 
