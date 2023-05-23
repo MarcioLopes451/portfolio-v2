@@ -195,20 +195,28 @@ margin-top: 2rem;
     color: var(--Gray);
     margin-top: 1rem;
 }
-.form-section {
 
-}
 form input {
     background: none;
     border: none;
     border-bottom: 1px solid var(--Gray);
     color: var(--Gray);
-    width: 300px;
+    width: 390px;
     padding-top: 1rem;
 }
 form input[type=text]{
     padding-left: 2rem;
     padding-bottom: 1rem;
+}
+form textarea {
+    margin-top: 2rem;
+    border: none;
+    background: none;
+    border-bottom: 1px solid var(--Gray);
+    color: var(--Gray);
+}
+form textarea [type=text]{
+    opacity: 0.5;
 }
 .form-section button {
     border: none;
@@ -216,21 +224,21 @@ form input[type=text]{
     margin-top: 2rem;
     color: var(--White);
     text-decoration: underline;
-    text-decoration-color: var(--Green);
-    float: right;
+    text-decoration-color: var(--Green);    
 }
 
 /* footer */
 .footer-container {
     border-top: 1px solid var(--White);
-    margin: 20px 170px;
+    margin: 100px 170px;
     display: flex;
     justify-content: space-between;
     align-items: center;
+    padding-top: 30px;
 }
 .footer-container p {
-    margin-top: 2rem;
     color: var(--White);
     font-family: var(--font-family--primary);
     font-size: var(--font-size-headingM);
 }
+

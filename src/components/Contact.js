@@ -1,9 +1,16 @@
-import React from 'react';
+import React,{useState}from 'react';
 import Github from '../images/icon-github.svg';
 import Linkedin from '../images/icon-linkedin.svg';
 import Twitter from '../images/icon-twitter.svg';
 
 export default function Contact() {
+    const [name,setName] = useState('');
+    const [email, setEmail] = useState('');
+
+
+    const handleSubmit =(e) => {
+        e.preventDefault();
+    }
   return (
     <div className='contact'>
         <div className='contact-container'>
@@ -14,24 +21,36 @@ export default function Contact() {
             </p>
             </div>
             <div className='form-section'>
-                <form>
+                <form onSubmit={handleSubmit}>
                     <label for='name'></label>
                    <br />
                    <input 
                    type='text'
                    id='name'
-                   value='name'
-                   name='name' />
+                   value={name}
+                   onChange={(e) => setName(e.target.value)} />
                    <br />
                    <label for='name'></label>
                    <br />
                    <input 
                    type='text'
                    id='email'
-                   value='email'
-                   name='email' />
+                   value={email}
+                   onChange={(e) => setEmail(e.target.value)} />
+                   <br />
+                   <label for='message'>
+                    <textarea
+                    id='message'
+                    name='message'
+                    rows='4'
+                    cols='40'
+                    placeholder='Message'
+                    >
+                    </textarea>
+                   </label>
+                   <br />
+                   <button onClick={handleSubmit}>Send Message</button>
                 </form>
-                <button>Send Message</button>
             </div>
         </div>
         <div className='footer-container'>
