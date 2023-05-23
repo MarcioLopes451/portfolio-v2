@@ -171,3 +171,66 @@ margin-top: 2rem;
     opacity: 1;
 }
 
+/* contact */
+
+.contact {
+    background-color: var(--DarkGray);
+}
+.contact-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 139px 170px;
+    font-family: var(--font-family--primary);
+    padding-top: 84px;
+}
+.contacting {
+    width: 450px;
+}
+.contacting h1 {
+    font-size: var(--font-size-headingL);
+    color: var(--White);
+}
+.contacting p {
+    color: var(--Gray);
+    margin-top: 1rem;
+}
+.form-section {
+
+}
+form input {
+    background: none;
+    border: none;
+    border-bottom: 1px solid var(--Gray);
+    color: var(--Gray);
+    width: 300px;
+    padding-top: 1rem;
+}
+form input[type=text]{
+    padding-left: 2rem;
+    padding-bottom: 1rem;
+}
+.form-section button {
+    border: none;
+    background: none;
+    margin-top: 2rem;
+    color: var(--White);
+    text-decoration: underline;
+    text-decoration-color: var(--Green);
+    float: right;
+}
+
+/* footer */
+.footer-container {
+    border-top: 1px solid var(--White);
+    margin: 20px 170px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.footer-container p {
+    margin-top: 2rem;
+    color: var(--White);
+    font-family: var(--font-family--primary);
+    font-size: var(--font-size-headingM);
+}
