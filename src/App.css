@@ -80,8 +80,8 @@ margin-top: 2rem;
 /* Home */
 
 .about{
-    margin: 220px 170px;
     border-top: solid var(--White) 1px;
+    margin: 200px 170px;
 }
 .about-container {
     margin-top: 30px;
@@ -170,6 +170,9 @@ margin-top: 2rem;
 .project-links:hover{
     opacity: 1;
 }
+.mobile-tablet-links {
+    display: none;
+}
 
 /* contact */
 
@@ -240,5 +243,75 @@ form textarea [type=text]{
     color: var(--White);
     font-family: var(--font-family--primary);
     font-size: var(--font-size-headingM);
+}
+
+/* tablet */
+@media screen and (max-width: 768px) {
+    .navbar {
+       position: absolute;
+       top: 30px;
+       left: 60px;
+       margin: auto;
+       width: 708px;
+    }
+    .rings {
+        opacity: 0.8;
+        left: -265px;
+    }
+    .circles {
+        visibility: hidden;
+    }
+    .hero {
+        margin: 200px 2rem;
+    }
+    .intro h1 {
+        font-size: 72px;
+        width: 500px;
+    }
+    .intro p {
+        width: 410px;
+    }
+    .hero-container img {
+        left: 420px;
+        top: 0;
+        width: 400px;
+    }
+    .about {
+        margin: 20px 30px;
+    }
+    .about-container {
+        display: block;
+    } 
+    .about-container p {
+        margin-top: 1rem;
+    }
+    .lang-list {
+        columns: 2;
+        column-gap: 4rem;
+        display: block;
+    }
+    .projects {
+        margin: 100px 2rem;
+    }
+    .project-links {
+       display: none;
+    }
+    .mobile-tablet-links {
+        display: flex;
+        gap: 2rem;
+    }
+    .mobile-tablet-links a {
+        color: var(--Gray);
+    text-decoration: underline;
+    text-decoration-color: var(--Green);
+    transition: ease 500ms all;
+    }
+    .mobile-tablet-links a:hover {
+        color: var(--Green);
+    }
+    .contact-container {
+        display: block;
+        text-align: center;
+    }
 }
 

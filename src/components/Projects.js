@@ -36,6 +36,10 @@ export default function Projects() {
                     </div>
                     <h2>{item.projectName}</h2>
                     <p>{item.lang}</p>
+                    <div className='mobile-tablet-links'>
+                        <a href={item.website} target="_blank">View Website</a>
+                        <a href={item.repo} target="_blank">View Source Code</a>
+                    </div>
                 </div>
             </div>
         ))}
