@@ -315,3 +315,27 @@ form textarea [type=text]{
     }
 }
 
+/* mobile */
+@media screen and (max-width:420px) {
+    .navbar-container {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        gap: 2rem;
+    }
+    .hero-container {
+        display: flex;
+    }
+    .intro h1 {
+        font-size: 44px;
+        text-align: center;
+    }
+    .intro p {
+        text-align: center;
+    }
+    .hero-container img {
+        display: none;
+        
+    }
+}
+
