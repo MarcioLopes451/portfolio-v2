@@ -15,6 +15,14 @@ export default function Nav() {
                 <img src={Twitter} alt='twitter' />
             </div>
         </div>
+        <div className='mobile-navbar'>
+        <p>Marcio Lopes</p>
+            <div className='social-mobile'>
+                <img src={Github} alt='github' />
+                <img src={Linkedin} alt='linkedin' />
+                <img src={Twitter} alt='twitter' />
+            </div>
+        </div>
     </div>
   )
 }
