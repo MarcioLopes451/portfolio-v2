@@ -320,12 +320,15 @@ form textarea [type=text]{
     .navbar-container {
        display: none;
     }
+    .rings {
+        display: none;;
+    }
     .navbar {
-        max-width: 390px;
+        width: 100%;
+        position: relative;
     }
     .mobile-navbar {
         display: block;
-        text-align: center;
     }
     .mobile-navbar p {
         color: var(--White);
@@ -333,14 +336,17 @@ form textarea [type=text]{
     }
     .social-mobile {
         display: flex;
-        justify-content: center;
+        justify-content: left;
         align-items: center;
         gap: 2rem;
         margin-top: 1rem;
     }
+    .hero {
+        margin: 6rem 1rem;
+    }
     .hero-container {
         display: block;
-        text-align: center;
+        
     }
     .intro h1 {
         font-size: 30px;
@@ -384,16 +390,32 @@ form textarea [type=text]{
         display: flex;
         flex-direction: column;
     }
+    form input {
+        width: 300px;
+    }
+    form textarea {
+        width: 300px;
+    }
+    .contact {
+        margin: auto;
+    }
     .contact-container {
         margin: auto;
+        display: block;
     }
     .contacting h1 {
         font-size: 40px;
     }
     .contacting p {
         font-size: 1rem;
-        width: 390px;
+        width: 200px;
+        text-align: center;
     }
-
+    .footer-container {
+        margin: 1rem 1rem;
+    }
+    .footer-container p {
+        font-size: 1rem;
+    }
 }
 
