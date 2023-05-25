@@ -33,6 +33,7 @@
   margin: 0;
   padding: 0;
   font: inherit;
+  outline: thick double #32a1ce;
 }
 
 /* Remove list styles on ul, ol elements with a list role, which suggests default styling will be removed */
