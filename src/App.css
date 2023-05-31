@@ -1,6 +1,11 @@
 /* nav */
 .navbar {
-    margin: 2rem 170px;
+    margin-top: 2rem;
+    margin-left: 170px;
+    margin-right: 170px;
+}
+.mobile-navbar {
+    display: none;
 }
 .navbar-container {
     display: flex;
@@ -183,12 +188,14 @@ margin-top: 2rem;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin: 139px 170px;
+    margin-top: 139px;
+    margin-left: 170px;
+    margin-right: 170px;
     font-family: var(--font-family--primary);
-    padding-top: 84px;
+    padding-top: 85px;
 }
 .contacting {
-    width: 450px;
+   width: 100%;
 }
 .contacting h1 {
     font-size: var(--font-size-headingL);
@@ -233,7 +240,9 @@ form textarea [type=text]{
 /* footer */
 .footer-container {
     border-top: 1px solid var(--White);
-    margin: 100px 170px;
+    margin-top: 100px;
+    margin-left: 170px;
+    margin-right: 170px;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -316,37 +325,42 @@ form textarea [type=text]{
 }
 
 /* mobile */
-@media screen and (max-width:390px) {
+@media screen and (max-width:390px) {   
     .navbar-container {
-       display: none;
+       display: flex;
+       width: 90%;
+       align-items: center;
     }
     .rings {
-        display: none;;
+        display: none;
     }
     .navbar {
-        width: 100%;
-        position: relative;
+        position: absolute;
+       top: 1rem;
+       left: 1rem;
+       width: 100%;
     }
-    .mobile-navbar {
-        display: block;
-    }
-    .mobile-navbar p {
+    .navbar-container p {
         color: var(--White);
         font-family: var(--font-family--primary);
+        font-size: 1rem;
     }
-    .social-mobile {
+    .social-media {
         display: flex;
         justify-content: left;
         align-items: center;
-        gap: 2rem;
+        gap: 1rem;
         margin-top: 1rem;
     }
+    .social-media img {
+        width: 20px;
+    }
     .hero {
-        margin: 6rem 1rem;
+        margin: 9rem 1rem;
     }
     .hero-container {
         display: block;
-        
+        text-align: center;
     }
     .intro h1 {
         font-size: 30px;
@@ -401,18 +415,26 @@ form textarea [type=text]{
     }
     .contact-container {
         margin: auto;
-        display: block;
+        width: 375px;
+    }
+    .contacting {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
     }
     .contacting h1 {
         font-size: 40px;
     }
     .contacting p {
         font-size: 1rem;
-        width: 200px;
-        text-align: center;
+       padding: 1rem 1rem;
     }
     .footer-container {
-        margin: 1rem 1rem;
+        margin-top: 1rem;
+        margin-left: 1rem;
+        margin-right: 1rem;
+        padding-bottom: 2rem;
     }
     .footer-container p {
         font-size: 1rem;
