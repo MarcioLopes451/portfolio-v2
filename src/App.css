@@ -335,7 +335,7 @@ form textarea [type=text]{
         display: none;
     }
     .navbar {
-        position: absolute;
+        position: none;
        top: 1rem;
        left: 1rem;
        width: 100%;
@@ -350,7 +350,6 @@ form textarea [type=text]{
         justify-content: left;
         align-items: center;
         gap: 1rem;
-        margin-top: 1rem;
     }
     .social-media img {
         width: 20px;
