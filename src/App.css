@@ -106,6 +106,7 @@ margin-top: 2rem;
     display: flex;
     justify-content: space-between;
     align-items: center;
+    list-style: none;
 }
 .lang-list li h2 {
     color: var(--White);
@@ -255,7 +256,7 @@ form textarea [type=text]{
 }
 
 /* tablet */
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 820px) {
     .navbar {
        position: absolute;
        top: 30px;
@@ -325,7 +326,7 @@ form textarea [type=text]{
 }
 
 /* mobile */
-@media screen and (max-width:390px) {   
+@media screen and (max-width:425px) {   
     .navbar-container {
        display: flex;
        width: 90%;
@@ -355,10 +356,15 @@ form textarea [type=text]{
         width: 20px;
     }
     .hero {
-        margin: 9rem 1rem;
+        margin-top: 9rem;
+        margin-left: 1rem;
+        margin-right: 1rem;
+        margin-bottom: 3rem;
     }
     .hero-container {
-        display: block;
+        display: flex;
+        align-items: center;
+        justify-content: center;
         text-align: center;
     }
     .intro h1 {
