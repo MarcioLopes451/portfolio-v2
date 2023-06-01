@@ -196,7 +196,7 @@ margin-top: 2rem;
     padding-top: 85px;
 }
 .contacting {
-   width: 100%;
+    padding-right: 4rem;
 }
 .contacting h1 {
     font-size: var(--font-size-headingL);
@@ -323,6 +323,9 @@ form textarea [type=text]{
         display: block;
         text-align: center;
     }
+    .contacting {
+        padding-right: 0px;   
+     }
 }
 
 /* mobile */
